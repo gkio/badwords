@@ -21,7 +21,7 @@ const hasEnglishBadWord = (text: string): boolean => {
 
 export enum LANGUAGE {
   ENGLISH = 'ENGLISH',
-    RUSSIAN = 'RUSSIAN',
+  RUSSIAN = 'RUSSIAN',
 }
 
 export const hasBadWord = (text: string, lang: LANGUAGE) => {
