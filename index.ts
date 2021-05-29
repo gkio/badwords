@@ -5,17 +5,17 @@ import {
   russianDictionaryOfBadWords
 } from './dict/rus'
 
-const detectBadLang = (text: string, dictionary: string[]) => {
+export const detectBadLang = (text: string, dictionary: string[]) => {
   return text.split(' ').some((word: string) => dictionary.includes(
     word.toLowerCase().trim().replace(/[`~!@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '')
   ))
 }
 
-const hasRussianBadWord = (text: string): boolean => {
+export const hasRussianBadWord = (text: string): boolean => {
   return detectBadLang(text, russianDictionaryOfBadWords)
 }
 
-const hasEnglishBadWord = (text: string): boolean => {
+export const hasEnglishBadWord = (text: string): boolean => {
   return detectBadLang(text, englishDictionaryOfBadWords)
 }
 

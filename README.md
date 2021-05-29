@@ -9,3 +9,20 @@
 
 ## RUSSIAN
 `hasBadWord('плохоеслово', LANGUAGE.RUSSIAN)`
+
+## Functions
+`detectBadLang(text: string: dictionary: string[])`
+
+`hasRussianBadWord(text: string)`
+
+`hasEnglishBadWord(text: string)`
+
+`hasBadWord(text: string, lang: LANGUAGE)`
+
+## Enums
+```
+export enum LANGUAGE {
+  ENGLISH = 'ENGLISH',
+  RUSSIAN = 'RUSSIAN',
+}
+```
