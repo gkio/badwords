@@ -23,7 +23,7 @@ const hasEnglishBadWord = (text: string): boolean => {
 
 export enum LANGUAGE {
 	ENGLISH = 'ENGLISH',
-	RUSSIAN = 'RUSSIAN',
+		RUSSIAN = 'RUSSIAN',
 }
 
 export const hasBadWord = (text: string, lang: LANGUAGE) => {
@@ -31,16 +31,16 @@ export const hasBadWord = (text: string, lang: LANGUAGE) => {
 		throw `Invalid argument should be at least 1 character`
 	}
 
-	if(!lang) {
+	if (!lang) {
 		throw `Second Parametr language is Required ('ENGLISH' or 'RUSSIAN')`
 	}
 
-	switch(lang) {
-		case LANGUAGE.RUSSIAN: 
+	switch (lang) {
+		case LANGUAGE.RUSSIAN:
 			return hasRussianBadWord(text)
-		case LANGUAGE.ENGLISH: 
+		case LANGUAGE.ENGLISH:
 			return hasEnglishBadWord(text)
-		default: 
+		default:
 			throw 'Language is not supported'
 	}
 }
