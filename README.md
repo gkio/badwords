@@ -1,8 +1,9 @@
 # Detect bad language for Russian and English
 
-> how to use
+### How to use?
 
 `import { hasBadWord, LANGUAGE } from 'badwords'`
+
 ## ENGLISH
 `hasBadWord('badword', LANGUAGE.ENGLISH)`
 
