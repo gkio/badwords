@@ -1,5 +1,3 @@
-import stringSimilarity from 'string-similarity';
-import franc from 'franc';
 import {
 	englishDictionaryOfBadWords
 } from './dict/eng'
