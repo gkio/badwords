@@ -1,0 +1,26 @@
+{
+  "name": "badwords",
+  "version": "1.0.0",
+  "description": "Detect bad language in russian or english",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": " jest",
+    "build": "tsc -p ./"
+  },
+  "author": "Gkio | Bugs And Drugs",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/franc": "^5.0.0",
+    "@types/jest": "^26.0.23",
+    "@types/string-similarity": "^4.0.0",
+    "jest": "^27.0.1",
+    "jest-watch-typeahead": "^0.6.4",
+    "ts-jest": "^27.0.1",
+    "typescript": "^4.3.2"
+  },
+  "dependencies": {
+    "franc": "^5.0.0",
+    "languagedetect": "^2.0.0",
+    "string-similarity": "^4.0.4"
+  }
+}
